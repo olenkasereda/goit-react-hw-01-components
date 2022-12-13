@@ -17,7 +17,7 @@ export const StatisticsList = ({ title, stats }) => {
   );
 };
 
-StatisticsList.propTypes = {
+Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf.isRequired,
+  stats: PropTypes.arrayOf(PropTypes.object),
 };

@@ -19,5 +19,5 @@ export const TransactionHistory = ({ transactions }) => {
 };
 
 TransactionHistory.propTypes = {
-  transactions: PropTypes.object,
+  transactions: PropTypes.arrayOf(PropTypes.object),
 };

@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export const Transaction = ({ transactions }) => {
   return (
@@ -14,13 +14,13 @@ export const Transaction = ({ transactions }) => {
   );
 };
 
-// Transaction.propTypes = {
-//   transactions: PropTypes.object(
-//     PropTypes.exact({
-//       id: PropTypes.string,
-//       type: PropTypes.string,
-//       amount: PropTypes.number,
-//       currency: PropTypes.string,
-//     }).isRequired
-//   ),
-// };
+Transaction.propTypes = {
+  transactions: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string,
+      type: PropTypes.string,
+      amount: PropTypes.string,
+      currency: PropTypes.string,
+    }).isRequired
+  ),
+};
