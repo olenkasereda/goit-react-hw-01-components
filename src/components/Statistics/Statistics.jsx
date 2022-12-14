@@ -1,17 +1,15 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-export const Statistics = ({label, percentage}) =>
-{
-    return (
-          <>
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}</span>
+export const Statistics = ({ label, percentage }) => {
+  return (
+    <>
+      <span>{label}</span>
+      <span>{percentage}</span>
     </>
-    )
-}
-
-Statistics.propTypes = {
-    percentage: PropTypes.number.isRequired,
-    label: PropTypes.string.isRequired,
+  );
 };
 
+Statistics.propTypes = {
+  percentage: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
+};
