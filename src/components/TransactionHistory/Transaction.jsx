@@ -3,7 +3,7 @@ import css from './Transaction.module.css';
 
 export const Transaction = ({ transactions }) => {
   return (
-    <tbody>
+    <tbody className={css.body}>
       {transactions.map(transaction => (
         <tr key={transaction.id}>
           <td>{transaction.type}</td>
